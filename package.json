@@ -1,0 +1,29 @@
+{
+  "name": "@kymera/simulator",
+  "version": "0.0.0",
+  "description": "Simulator for the Kymera wearables",
+  "main": "app.js",
+  "repository": "https://gitlab.com/chameleoid/kymera/simulator.git",
+  "author": "*Kim Zick (rummik) <k@9k1.us>",
+  "license": "MPL-2.0",
+  "scripts": {
+    "start": "electron .",
+    "start:watch": "nodemon --exec 'yarn start'",
+    "test": "mocha",
+    "test:watch": "nodemon --exec 'yarn test'"
+  },
+  "dependencies": {
+    "@kymera/core": "*",
+    "electron": "^3.0.9"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-webdriver": "^1.2.0",
+    "electron-chromedriver": "^4.0.0-beta.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.6",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "spectron": "^5.0.0"
+  }
+}
