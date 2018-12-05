@@ -8,9 +8,9 @@
   "license": "MPL-2.0",
   "scripts": {
     "start": "electron .",
-    "start:watch": "nodemon --exec 'yarn start'",
+    "start:watch": "nodemon -e js,css,html -w app --exec 'yarn start'",
     "test": "mocha",
-    "test:watch": "nodemon --exec 'yarn test'"
+    "test:watch": "nodemon -e js,css,html -w app -w test --exec 'yarn test'"
   },
   "dependencies": {
     "@kymera/core": "*",
