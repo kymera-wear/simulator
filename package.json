@@ -8,13 +8,15 @@
   "license": "MPL-2.0",
   "scripts": {
     "start": "electron .",
-    "start:watch": "nodemon -e js,css,html -w app --exec 'yarn start'",
+    "start:watch": "nodemon -e js,css,html -i test --exec 'yarn start'",
     "test": "mocha",
-    "test:watch": "nodemon -e js,css,html -w app -w test --exec 'yarn test'"
+    "test:watch": "nodemon -e js,css,html --exec 'yarn test'"
   },
   "dependencies": {
-    "@kymera/core": "*",
-    "electron": "^3.0.9"
+    "app-root-path": "^2.1.0",
+    "electron": "^3.0.9",
+    "liblouis": "^0.4.0",
+    "onoff": "^3.2.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",

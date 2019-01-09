@@ -24,9 +24,11 @@ module.exports = function chaiSpectron(app) {
       const textArray = (getText instanceof Array) ? getText : [ getText ];
 
       this.assert(
-        textArray.some(text => text === expected),
-        `Expected element <${selector}> to contain text "${expected}", but only found: ${textArray}`,
-        `Expected element <${selector}> not to contain text "${expected}", but found: ${textArray}`,
+        expected instanceof RegExp ?
+          textArray.some(text => expected.test(text)) :
+          textArray.some(text => text === expected),
+        `Expected element <${selector}> to contain text "${expected}" but only found: ${textArray}`,
+        `Expected element <${selector}> not to contain text "${expected}" but found: ${textArray}`,
       );
     });
 

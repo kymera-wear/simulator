@@ -1,0 +1,61 @@
+.display {
+  width: 60px;
+}
+
+.display [id*=gpio] {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #000;
+}
+  .display [id*=gpio]:after {
+    color: #fff;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    display: block;
+  }
+
+  .display [id*="0"]:after {
+    content: '0';
+  }
+
+  .display [id*="1"]:after {
+    content: '1';
+  }
+
+  .display [id*="2"]:after {
+    content: '2';
+  }
+
+  .display [id*="3"]:after {
+    content: '3';
+  }
+
+  .display [id*="4"]:after {
+    content: '4';
+  }
+
+  .display [id*="5"]:after {
+    content: '5';
+  }
+
+  .display [id*="6"]:after {
+    content: '6';
+  }
+
+  .display [id*="7"]:after {
+    content: '7';
+  }
+
+  .display [id*=gpio]:nth-child(2n-1) {
+    float: left;
+  }
+
+  .display [id*=gpio]:nth-child(2n) {
+    float: right;
+  }
+
+  .display [id*=gpio].active {
+    background: #00f;
+  }
