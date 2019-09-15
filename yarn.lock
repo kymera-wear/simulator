@@ -1669,7 +1669,7 @@ lazystream@^1.0.0:
   dependencies:
     readable-stream "^2.0.5"
 
-liblouis-build@*:
+liblouis-build@*, liblouis-build@3.2.0-rc:
   version "3.2.0-rc"
   resolved "https://registry.yarnpkg.com/liblouis-build/-/liblouis-build-3.2.0-rc.tgz#77489c398ea5232878a2bd27ffa359499e056a75"
   integrity sha1-d0icOY6lIyh4or0n/6NZSZ4FanU=
@@ -3274,6 +3274,10 @@ yauzl@2.4.1:
   integrity sha1-lSj0QtqxsihOWLQ3m7GU4i4MQAU=
   dependencies:
     fd-slicer "~1.0.1"
+
+"zepto@github:madrobby/zepto":
+  version "1.2.0"
+  resolved "https://codeload.github.com/madrobby/zepto/tar.gz/3172e92dd80f91f177def1068beadd98a3c026e3"
 
 zip-stream@^1.2.0:
   version "1.2.0"

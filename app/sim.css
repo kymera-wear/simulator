@@ -1,5 +1,14 @@
+#untranslated {
+  font-family: monospace;
+}
+
+#translated {
+  font-size: 2em;
+}
+
 .display {
   width: 60px;
+  float: right;
 }
 
 .display [id*=gpio] {

@@ -6,6 +6,8 @@ const appRoot = require('app-root-path').toString();
 
 liblouis.enableOnDemandTableLoading(path.join(appRoot, 'node_modules', 'liblouis-build', 'tables'));
 
+process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = true;
+
 ipc.on('ready', ({ sender: render }) => {
   Display.prototype._write = Display.prototype.write;
 
