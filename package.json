@@ -1,6 +1,6 @@
 {
   "name": "@kymera/simulator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simulator for the Kymera wearables",
   "main": "app.js",
   "repository": "https://gitlab.com/chameleoid/kymera/simulator.git",
