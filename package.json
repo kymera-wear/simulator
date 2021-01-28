@@ -15,7 +15,7 @@
   "dependencies": {
     "@kymera/core": "^1.0.0",
     "app-root-path": "^2.1.0",
-    "electron": "^3.0.9",
+    "electron": "^9.4.0",
     "liblouis": "^0.4.0",
     "onoff": "^3.2.2",
     "zepto": "github:madrobby/zepto"
